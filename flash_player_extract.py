@@ -75,7 +75,7 @@ def extract_flash_player_from_pkg(pkg_path, out_path):
         else:
             error_quit('! postflight has changed and is unrecognizable, submit a ticket')
     else:
-        error_quit('! postflight has changed and is unrecognizable, submit at ticket')
+        error_quit('! postflight has changed and is unrecognizable, submit a ticket')
     print "* Attempting execution of patch ..."
     try:
         _ = subprocess.check_call("./postflight.patched", shell=True)
